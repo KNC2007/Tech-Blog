@@ -1,17 +1,17 @@
 [
   {
-    "name": "Sal",
-    "email": "sal@hotmail.com",
+    "user_name": "RyleeCat",
+    "email": "cat@hotmail.com",
     "password": "password12345"
   },
   {
-    "name": "Lernantino",
-    "email": "lernantino@gmail.com",
+    "user_name": "PippiDog",
+    "email": "dog@gmail.com",
     "password": "password12345"
   },
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
+    "user_name": "MikeD",
+    "email": "mike@aol.com",
     "password": "password12345"
   }
 ]
