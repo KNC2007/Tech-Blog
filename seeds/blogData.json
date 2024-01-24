@@ -2,19 +2,16 @@
   {
     "title": "ORM Simplified: Understanding Object-Relational Mapping (ORM) in Database Design",
     "contents": "Embrace the power of ORM to seamlessly bridge the gap between your application's objects and relational databases, simplifying data manipulation and enhancing code maintainability.",
-    "date_created": "1/1/2024",
-    "user_name": "PippiDog"
+    "date_created": "1/1/2024"
   },
   {
     "title": "Demystifying MVC: A Concise Guide to Model-View-Controller Architecture",
     "contents": "Dive into the fundamentals of MVC architecture, unraveling the layers of Model, View, and Controller to build scalable and organized web applications.",
-    "date_created": "1/3/2024",
-    "user_name": "PippiDog"
+    "date_created": "1/3/2024"
   },
   {
     "title": "Handlebars: Streamlining Front-End Development with Expressive Templating",
     "contents": "Explore the elegance of Handlebars as a templating engine, empowering developers to create dynamic and reusable HTML templates with ease.",
-    "date_created": "1/5/2024",
-    "user_name": "PippiDog"
+    "date_created": "1/5/2024"
   }
 ]

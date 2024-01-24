@@ -23,22 +23,15 @@ Blog.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    needed_funding: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
-    },
+    // needed_funding: {
+    //   type: DataTypes.FLOAT,
+    //   allowNull: false,
+    // },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
         key: 'id',
-      },
-    },
-    user_name: {
-      type: DataTypes.STRING,
-      references: {
-        model: 'user',
-        key: 'name',
       },
     },
   },

@@ -1,16 +1,16 @@
 [
   {
-    "user_name": "RyleeCat",
+    "name": "RyleeCat",
     "email": "cat@hotmail.com",
     "password": "password12345"
   },
   {
-    "user_name": "PippiDog",
+    "name": "PippiDog",
     "email": "dog@gmail.com",
     "password": "password12345"
   },
   {
-    "user_name": "MikeD",
+    "name": "MikeD",
     "email": "mike@aol.com",
     "password": "password12345"
   }
