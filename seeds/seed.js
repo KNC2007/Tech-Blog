@@ -11,7 +11,7 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
-
+console.log(users)
 
 for (const blog of blogData) {
   await Blog.create({
