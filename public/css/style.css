@@ -1,4 +1,4 @@
-header, .project:not(:last-child) {
+header, .blog:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
@@ -8,7 +8,7 @@ header, .project:not(:last-child) {
   padding: 0;
   cursor: pointer;
   color: #1b89bc;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 100%;
 }
 
@@ -17,8 +17,10 @@ header, .project:not(:last-child) {
   text-decoration: underline;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+.display-flex {
+  display: flex;
+}
+
+.display-flex h1 {
+  margin-right: 50px; /* Adjust the margin as needed */
 }

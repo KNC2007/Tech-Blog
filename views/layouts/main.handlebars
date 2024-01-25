@@ -15,19 +15,19 @@
       {{!-- <h1>
         <a href="/">Home</a>
       </h1> --}}
-      <nav>
+      <nav class="display-flex">
         <h1>
           <a href="/">Home</a>
         </h1>
-              {{!-- <h1>
-        <a href="/">Dashboard</a>
-      </h1> --}}
+        <h1>
+          <a href="/">Dashboard</a>
+        </h1>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <a href="/dashboard">dashboard</a> |
-        <button class="no-button" id="logout">logout</button>
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <h1><a href="/login">Login</a></h1>
         {{/if}}
       </nav>
     </header>
