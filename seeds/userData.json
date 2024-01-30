@@ -1,15 +1,18 @@
 [
   {
+    "id": 1,
     "name": "RyleeCat",
     "email": "cat@hotmail.com",
     "password": "password12345"
   },
   {
+    "id": 2,
     "name": "PippiDog",
     "email": "dog@gmail.com",
     "password": "password12345"
   },
   {
+    "id": 3,
     "name": "MikeD",
     "email": "mike@aol.com",
     "password": "password12345"
