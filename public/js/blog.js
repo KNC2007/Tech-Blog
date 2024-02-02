@@ -1,4 +1,5 @@
-// 
+const commentForm = document.querySelector(".new-comment-form")
+
 const newCommentHandler = async (event) => {
   event.preventDefault();
 
@@ -22,6 +23,8 @@ const newCommentHandler = async (event) => {
 }
 
 
-document
-  .querySelector('.new-comment-form')
-  .addEventListener('submit', newCommentHandler);
+
+
+if (commentForm != null) {
+  commentForm.addEventListener('submit', newCommentHandler);
+}

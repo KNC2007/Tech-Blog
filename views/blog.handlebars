@@ -1,17 +1,46 @@
 <div class="text-left">
   <h2>{{title}}</h2>
   <p>{{{contents}}}</p>
-{{!-- blog and author and date created --}}
+  {{!-- blog and author and date created --}}
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
 
-{{!-- delete button --}}
+  {{!-- delete button --}}
+
+  {{#if logged_in}}
+  <div class="blog-list">
+    <div class="col-md-4">
+      <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
+    </div>
+    {{else}}
+    <p>You need to be logged in to delete your blog post. <a href="/login">Log in</a></p>
+    {{/if}}
+  </div>
 
 
-{{!-- update button --}}
+{{!-- update section - update when logged in --}}
+{{#if logged_in}}
+  <button class="btn btn-primary" id="show-update-form">Update Blog</button>
+  <form class="form update-blog-form" id="update-blog-form" style="display: none;">
+    <div class="form-group">
+      <label for="update-blog-title">Update Title:</label>
+      <input class="form-input" type="text" id="update-blog-title" name="update-blog-title" />
+    </div>
+    <div class="form-group">
+      <label for="update-blog-contents">Update Contents:</label>
+      <textarea class="form-input" id="update-blog-contents" name="update-blog-contents"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+  </form>
+  {{else}}
+    <p>You need to be logged in to update your blog post. <a href="/login">Log in</a></p>
+{{/if}}
 
 
 
-{{!-- leave a comment if logged in --}}
+
+  {{!-- leave a comment if logged in --}}
   {{#if logged_in}}
   <div class="form">
     <form class="form new-comment-form">
@@ -52,3 +81,5 @@
 
 
 <script src="/js/blog.js"></script>
+
+<script src="./js/dashboard.js"></script>
