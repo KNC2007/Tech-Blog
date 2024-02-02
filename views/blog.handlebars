@@ -1,9 +1,17 @@
 <div class="text-left">
   <h2>{{title}}</h2>
   <p>{{{contents}}}</p>
-
+{{!-- blog and author and date created --}}
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
 
+{{!-- delete button --}}
+
+
+{{!-- update button --}}
+
+
+
+{{!-- leave a comment if logged in --}}
   {{#if logged_in}}
   <div class="form">
     <form class="form new-comment-form">
@@ -17,13 +25,9 @@
       </div>
     </form>
   </div>
-
-  
   {{else}}
   <p>You need to be logged in to leave a comment. <a href="/login">Log in</a></p>
   {{/if}}
-
-
   <div class="row mb-4">
     <div class="col-md-7">
       <h2>Comments:</h2>
@@ -37,7 +41,6 @@
         </div>
         <div class="col-md-7">
           <p>
-
           </p>
         </div>
       </div>
@@ -45,5 +48,7 @@
     </div>
   </div>
 </div>
+
+
 
 <script src="/js/blog.js"></script>
