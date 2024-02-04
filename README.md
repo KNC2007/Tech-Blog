@@ -19,7 +19,7 @@ Create an account, then sign in to post technology themed blog posts. Comment on
     
 ![Tech blog homepage displaying all blog posts.](./public/assets/tech%20blog%20homepage.png)
 
-Link to deployed application:
+Link to deployed application: https://tech-blog-ck-5e5580ca6f4a.herokuapp.com/
 
 ## License
 This project is licensed under the MIT License license.
