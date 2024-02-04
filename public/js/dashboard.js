@@ -1,5 +1,6 @@
 const blogForm = document.querySelector(".new-blog-form")
 const blogDelete = document.querySelector(".blog-list")
+const blogUpdate = document.querySelector("#update-form")
 
 // post new blog route
 const newFormHandler = async (event) => {
@@ -49,11 +50,15 @@ const updateFormHandler = async (event) => {
 
   const title = document.querySelector('#update-blog-title').value.trim();
   const contents = document.querySelector('#update-blog-contents').value.trim();
+  const id = event.target.getAttribute('data-id');
+
+  console.log("title:", title);
+  console.log("contents:", contents);
+  // console.log("blogId:", blogId);
 
   if (title && contents) {
-    const blogId = document.querySelector('#update-blog-id').value;
 
-    const response = await fetch(`/api/blogs/${blogId}`, {
+    const response = await fetch(`/api/blogs/${id}`, {
       method: 'PUT',
       body: JSON.stringify({ title, contents }),
       headers: {
@@ -80,6 +85,9 @@ if (blogForm != null) {
 
 if (blogDelete != null) {
   blogDelete.addEventListener('click', delButtonHandler);
+};
+
+if (blogUpdate != null) {
+  blogUpdate.addEventListener('click', updateFormHandler);
 }
 
-  
