@@ -69,7 +69,7 @@ const updateFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {
-      alert('Failed to update blog post');
+      alert('You can only update your own blog post.');
     }
   }
 };
